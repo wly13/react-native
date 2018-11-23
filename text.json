@@ -1,0 +1,300 @@
+{
+  "code": "1",
+  "data": {
+    "advertisement": {
+      "advList": [
+        {
+          "advTag": "广告",
+          "endDate": 1548172799,
+          "isHorizontalScreen": false,
+          "isOpenH5": false,
+          "startDate": 1514736000,
+          "tag": "商城双十一活动",
+          "type": "203",
+          "typeName": "影片详情页banner2",
+          "url": "https://static4da.mtime.cn/feature/mobile/banner/2018/1031/s11750210.html"
+        }
+      ],
+      "count": 1,
+      "error": "",
+      "success": true
+    },
+    "basic": {
+      "actors": [
+        {
+          "actorId": 1753434,
+          "img": "http://img5.mtime.cn/ph/2017/12/20/102453.71633109_1280X720X2.jpg",
+          "name": "麦肯芝·弗依",
+          "nameEn": "Mackenzie Foy",
+          "roleImg": "",
+          "roleName": "克拉拉"
+        },
+        {
+          "actorId": 914747,
+          "img": "http://img31.mtime.cn/ph/2014/03/14/152553.24862330_1280X720X2.jpg",
+          "name": "摩根·弗里曼",
+          "nameEn": "Morgan Freeman",
+          "roleImg": "",
+          "roleName": "教父杜塞梅尔"
+        },
+        {
+          "actorId": 913427,
+          "img": "http://img31.mtime.cn/ph/2014/07/03/141602.55103165_1280X720X2.jpg",
+          "name": "凯拉·奈特莉",
+          "nameEn": "Keira Knightley",
+          "roleImg": "",
+          "roleName": "糖梅仙子"
+        },
+        {
+          "actorId": 936981,
+          "img": "http://img31.mtime.cn/ph/2014/03/14/153427.50328146_1280X720X2.jpg",
+          "name": "海伦·米伦",
+          "nameEn": "Helen Mirren",
+          "roleImg": "",
+          "roleName": "姜母女王"
+        },
+        {
+          "actorId": 2285863,
+          "img": "http://img5.mtime.cn/ph/2018/09/13/144325.45370560_1280X720X2.jpg",
+          "name": "杰登·福拉-奈特",
+          "nameEn": "Jayden Fowora-Knight",
+          "roleImg": "",
+          "roleName": "菲利浦"
+        },
+        {
+          "actorId": 942971,
+          "img": "http://img31.mtime.cn/ph/2014/10/17/093619.39875789_1280X720X2.jpg",
+          "name": "马修·麦克费登",
+          "nameEn": "Matthew Macfadyen",
+          "roleImg": "",
+          "roleName": "斯塔伯先生"
+        },
+        {
+          "actorId": 2106337,
+          "img": "http://img5.mtime.cn/ph/2017/02/23/104408.24080935_1280X720X2.jpg",
+          "name": "艾丽·巴姆博",
+          "nameEn": "Ellie Bamber",
+          "roleImg": "",
+          "roleName": "姐姐路易丝"
+        },
+        {
+          "actorId": 2186704,
+          "img": "http://img5.mtime.cn/ph/2018/10/17/173245.89601613_1280X720X2.jpg",
+          "name": "汤姆·斯威特",
+          "nameEn": "Tom Sweet",
+          "roleImg": "",
+          "roleName": "弟弟弗里兹"
+        },
+        {
+          "actorId": 912524,
+          "img": "http://img31.mtime.cn/ph/2016/08/31/105518.26068550_1280X720X2.jpg",
+          "name": "理查德·格兰特",
+          "nameEn": "Richard E. Grant",
+          "roleImg": "",
+          "roleName": "冰雪国王"
+        },
+        {
+          "actorId": 1001272,
+          "img": "http://img5.mtime.cn/ph/2018/03/06/114901.49224085_1280X720X2.jpg",
+          "name": "艾赫尼奥·德伯兹",
+          "nameEn": "Eugenio Derbez",
+          "roleImg": "",
+          "roleName": "山楂公爵"
+        },
+        {
+          "actorId": 932709,
+          "img": "http://img31.mtime.cn/ph/2015/06/10/085453.51349147_1280X720X2.jpg",
+          "name": "欧米德·吉亚李利",
+          "nameEn": "Omid Djalili",
+          "roleImg": "",
+          "roleName": "胖骑士"
+        },
+        {
+          "actorId": 1752015,
+          "img": "http://img31.mtime.cn/ph/2014/09/04/154757.56172048_1280X720X2.jpg",
+          "name": "杰克·怀特霍尔",
+          "nameEn": "Jack Whitehall",
+          "roleImg": "",
+          "roleName": "哈勒昆"
+        },
+        {
+          "actorId": 2136893,
+          "img": "http://img31.mtime.cn/ph/2016/07/14/093833.77716998_1280X720X2.jpg",
+          "name": "米斯蒂·科普兰",
+          "nameEn": "Misty Copeland",
+          "roleImg": "",
+          "roleName": "芭蕾公主"
+        },
+        {
+          "actorId": 1876807,
+          "img": "http://img5.mtime.cn/ph/2016/09/13/112122.44618457_1280X720X2.jpg",
+          "name": "谢尔盖·普诺宁",
+          "nameEn": "Sergei Polunin",
+          "roleImg": "",
+          "roleName": "糖果骑士"
+        },
+        {
+          "actorId": 1215874,
+          "img": "http://img31.mtime.cn/ph/2016/06/12/172935.31184734_1280X720X2.jpg",
+          "name": "梅拉·沙尔",
+          "nameEn": "Meera Syal",
+          "roleImg": "",
+          "roleName": ""
+        },
+        {
+          "actorId": 1292893,
+          "img": "http://img31.mtime.cn/ph/2014/09/04/154000.39354808_1280X720X2.jpg",
+          "name": "米兰达·哈特",
+          "nameEn": "Miranda Hart",
+          "roleImg": "",
+          "roleName": "Dew Drop Fairy"
+        },
+        {
+          "actorId": 1846965,
+          "img": "http://img5.mtime.cn/ph/2017/05/22/145122.83603404_1280X720X2.jpg",
+          "name": "",
+          "nameEn": "Nick Mohammed",
+          "roleImg": "",
+          "roleName": "Butler"
+        },
+        {
+          "actorId": 2207799,
+          "img": "http://img31.mtime.cn/ph/1799/2207799/2207799_1280X720X2.jpg",
+          "name": "",
+          "nameEn": "Albert Tang",
+          "roleImg": "",
+          "roleName": "Key Commitee Member"
+        },
+        {
+          "actorId": 2285860,
+          "img": "http://img31.mtime.cn/ph/1860/2285860/2285860_1280X720X2.jpg",
+          "name": "",
+          "nameEn": "Blake Ridder",
+          "roleImg": "",
+          "roleName": "Toy Soldier"
+        },
+        {
+          "actorId": 2263191,
+          "img": "http://img31.mtime.cn/ph/1191/2263191/2263191_1280X720X2.jpg",
+          "name": "",
+          "nameEn": "Tim Ingall",
+          "roleImg": "",
+          "roleName": "Carol singer       (singing voice)"
+        }
+      ],
+      "award": {
+        "awardList": [],
+        "totalNominateAward": 0,
+        "totalWinAward": 0
+      },
+      "bigImage": "",
+      "commentSpecial": "致敬同名童话开拓奇幻冒险",
+      "community": {},
+      "director": {
+        "directorId": 898628,
+        "img": "http://img31.mtime.cn/ph/2016/07/28/104310.98429635_1280X720X2.jpg",
+        "name": "莱塞·霍尔斯道姆",
+        "nameEn": "Lasse Hallström"
+      },
+      "festivals": [],
+      "hotRanking": -1,
+      "img": "http://img5.mtime.cn/mt/2018/10/17/110808.38008587_1280X720X2.jpg",
+      "is3D": true,
+      "isDMAX": true,
+      "isEggHunt": false,
+      "isFilter": false,
+      "isIMAX": false,
+      "isIMAX3D": false,
+      "isTicket": true,
+      "message": "该操作将清除您对该片的评分！是否确认？",
+      "mins": "99分钟",
+      "movieId": 232384,
+      "movieStatus": 1,
+      "name": "胡桃夹子和四个王国",
+      "nameEn": "The Nutcracker and the Four Realms",
+      "overallRating": 6.8,
+      "personCount": 192,
+      "quizGame": {},
+      "releaseArea": "中国",
+      "releaseDate": "20181102",
+      "sensitiveStatus": false,
+      "showCinemaCount": 145,
+      "showDay": 1541404800,
+      "showtimeCount": 1646,
+      "stageImg": {
+        "count": 51,
+        "list": [
+          {
+            "imgId": 7421487,
+            "imgUrl": "http://img5.mtime.cn/pi/2017/12/09/104030.84664661_1280X720X2.jpg"
+          },
+          {
+            "imgId": 7430892,
+            "imgUrl": "http://img5.mtime.cn/pi/2018/01/18/090123.33447585_1280X720X2.jpg"
+          },
+          {
+            "imgId": 7421488,
+            "imgUrl": "http://img5.mtime.cn/pi/2017/12/09/104031.63294510_1280X720X2.jpg"
+          },
+          {
+            "imgId": 7503545,
+            "imgUrl": "http://img5.mtime.cn/pi/2018/10/17/111022.68768454_1280X720X2.jpg"
+          }
+        ]
+      },
+      "story": "克拉拉（麦肯芝·弗依饰）一直在寻找一把钥匙——这把与众不同的钥匙，能开启她已故母亲藏有无价之宝的盒子。在教父杜塞梅尔（摩根·弗里曼饰）举办的节日聚会上，一根金线指引着她找到了这把梦寐以求的钥匙。然而钥匙突然消失，进入了一个陌生而神秘的平行世界。在这个世界里，克拉拉结识了士兵菲利普（杰登·福拉·奈特饰）、一群老鼠、以及分别掌管雪花王国、鲜花王国和糖果王国的三位摄政王。克拉拉和菲利普必须勇敢地前往阴森的第四王国，挑战专横的姜母女王，找回钥匙，并让四大王国回归和平安详。",
+      "style": {
+        "isLeadPage": 0,
+        "leadImg": "https://img2.mtime.cn/mg/.jpg",
+        "leadUrl": ""
+      },
+      "totalNominateAward": 0,
+      "totalWinAward": 0,
+      "type": [
+        "冒险",
+        "家庭",
+        "奇幻"
+      ],
+      "url": "https://movie.mtime.com/232384/",
+      "video": {
+        "count": 6,
+        "hightUrl": "https://vfx.mtime.cn/Video/2018/10/20/mp4/181020163809583200.mp4",
+        "img": "http://img5.mtime.cn/mg/2018/10/20/164359.36274340_235X132X4.jpg",
+        "title": "胡桃夹子和四个王国 中国终极预告片",
+        "url": "https://vfx.mtime.cn/Video/2018/10/20/mp4/181020163809583200_480.mp4",
+        "videoId": 72361,
+        "videoSourceType": 1
+      }
+    },
+    "boxOffice": {
+      "movieId": 232384,
+      "ranking": 1,
+      "todayBox": 342907485,
+      "todayBoxDes": "342.91",
+      "todayBoxDesUnit": "今日实时(万)",
+      "totalBox": 8505976799,
+      "totalBoxDes": "8505.98",
+      "totalBoxUnit": "累计票房(万)"
+    },
+    "live": {
+      "count": 0,
+      "img": "",
+      "liveId": 0,
+      "playNumTag": "",
+      "playTag": "",
+      "status": 3,
+      "title": ""
+    },
+    "playState": "1",
+    "playlist": [],
+    "related": {
+      "goodsCount": 0,
+      "goodsList": [],
+      "relateId": 0,
+      "relatedUrl": "https://mall-wv.mtime.cn/#!/commerce/list/",
+      "type": 0
+    }
+  },
+  "msg": "成功",
+  "showMsg": ""
+}

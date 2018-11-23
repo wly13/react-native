@@ -1,0 +1,32 @@
+{
+  "status": 0,
+  "result": {
+    "location": {
+      "lng": 102.56358166666664,
+      "lat": 23.001250008764079
+    },
+    "formatted_address": "云南省红河哈尼族彝族自治州绿春县",
+    "business": "",
+    "addressComponent": {
+      "country": "中国",
+      "country_code": 0,
+      "country_code_iso": "CHN",
+      "country_code_iso2": "CN",
+      "province": "云南省",
+      "city": "红河哈尼族彝族自治州",
+      "city_level": 2,
+      "district": "绿春县",
+      "town": "",
+      "adcode": "532531",
+      "street": "",
+      "street_number": "",
+      "direction": "",
+      "distance": ""
+    },
+    "pois": [],
+    "roads": [],
+    "poiRegions": [],
+    "sematic_description": "",
+    "cityCode": 107
+  }
+}
