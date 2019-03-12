@@ -2201,7 +2201,7 @@ fbjs-scripts@^1.0.0:
     semver "^5.1.0"
     through2 "^2.0.0"
 
-fbjs@^0.8.0, fbjs@^0.8.9:
+fbjs@^0.8.0, fbjs@^0.8.17, fbjs@^0.8.9:
   version "0.8.17"
   resolved "http://registry.npm.taobao.org/fbjs/download/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
@@ -4849,6 +4849,15 @@ react-lifecycles-compat@^3.0.4:
   resolved "http://registry.npm.taobao.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha1-TxonOv38jzSIqMUWv9p4+HI1I2I=
 
+react-native-gesture-handler@^1.1.0:
+  version "1.1.0"
+  resolved "http://registry.npm.taobao.org/react-native-gesture-handler/download/react-native-gesture-handler-1.1.0.tgz#2a7d545ad2e0ca23adce22b2af441ad360ecccee"
+  integrity sha1-Kn1UWtLgyiOtziKyr0Qa02DszO4=
+  dependencies:
+    hoist-non-react-statics "^2.3.1"
+    invariant "^2.2.2"
+    prop-types "^15.5.10"
+
 react-native-gesture-handler@~1.0.14:
   version "1.0.17"
   resolved "http://registry.npm.taobao.org/react-native-gesture-handler/download/react-native-gesture-handler-1.0.17.tgz#a046f371f277092157fc2781323d35a02a93daaf"
@@ -4893,6 +4902,14 @@ react-native-tab-view@^1.0.0, react-native-tab-view@^1.2.0:
   integrity sha1-xOQ6U43KzOFRk4dFzqCRdr7sy8M=
   dependencies:
     prop-types "^15.6.1"
+
+react-native-webview@^5.3.0:
+  version "5.3.0"
+  resolved "http://registry.npm.taobao.org/react-native-webview/download/react-native-webview-5.3.0.tgz#191666e7ded6d6077380a98b0a32a6cce81a2f4b"
+  integrity sha1-GRZm597W1gdzgKmLCjKmzOgaL0s=
+  dependencies:
+    escape-string-regexp "^1.0.5"
+    fbjs "^0.8.17"
 
 react-native@0.58.5:
   version "0.58.5"

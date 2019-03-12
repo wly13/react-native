@@ -26,12 +26,13 @@ export default class Header extends Component {
     this.renderHead(title);
   }
   renderHead(head) {
-    if (head === "home") {
-      this.setState({
-        headTitle: "首页",
-        titleIndex: 0
-      })
-    } else if (head === "category") {
+    // if (head === "home") {
+    //   this.setState({
+    //     headTitle: "首页",
+    //     titleIndex: 0
+    //   })
+    // } else 
+    if (head === "category") {
       this.setState({
         headTitle: "分类",
         titleIndex: 1
@@ -54,7 +55,7 @@ export default class Header extends Component {
     <View >
       <Text style = {[
         styles.publicStyle,
-        this.state.titleIndex === 0 ? styles.aa : null ||
+        // this.state.titleIndex === 0 ? styles.aa : null ||
         this.state.titleIndex === 1 ? styles.bb : null ||
         this.state.titleIndex === 2 ? styles.cc : null ||
         this.state.titleIndex === 3 ? styles.dd : null

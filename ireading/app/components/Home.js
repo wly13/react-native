@@ -11,10 +11,10 @@ import {
 import ScrollableTabView, {
   ScrollableTabBar,
 } from 'react-native-scrollable-tab-view';
-import {createStackNavigator} from 'react-navigation';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-import Header from './Header';
-// import WebView from './WebView';
+// import Header from './Header';
+import WebViewPage from './WebViewPage';
 
 var data = [
   {
@@ -37,20 +37,18 @@ var data = [
   },
 ];
 var key = '33457bbadb1179dc572fad4aff06b369';
-var cols = data.length;
+// var cols = data.length;
 var {height, width} = Dimensions.get('screen');
-export default class HomePage extends Component {
-// class HomePage extends Component {
-  static navigationOptions={
-    title:'111'
-  }
+class HomePage extends Component {
+  static navigationOptions = {
+    headerTitle:'首页',
+  };
   constructor(props) {
     super(props);
     // console.log("wang-tag this.props:"+this.props.title);
     this.state = {
       dataList: [],
       tabUrl: data[0].url + 'key=' + key,
-      // tabUrl:''
     };
   }
   componentDidMount() {
@@ -64,7 +62,7 @@ export default class HomePage extends Component {
           resolve(responseJson);
           console.log(responseJson.newslist);
           this.setState({
-            dataList: responseJson.newslist,
+            dataList: responseJson.newslist
           });
         })
         .catch(error => {
@@ -77,7 +75,9 @@ export default class HomePage extends Component {
     // console.log(item);
     return (
       <TouchableNativeFeedback
-        onPress={() => this.props.navigation.navigate('WebView')}
+        onPress={() => this.props.navigation.navigate('WebViewPage',{
+          url:item.url
+        })}
       >
         <View
           style={{flex: 1, flexDirection: 'row', padding: 5, paddingBottom: -5}}
@@ -116,7 +116,7 @@ export default class HomePage extends Component {
     let tabs = data;
     return (
       <View style={{flex: 1}}>
-        <Header title={this.props.title} />
+        {/* <Header title={this.props.title} /> */}
         <ScrollableTabView
           renderTabBar={() => (
             <ScrollableTabBar
@@ -138,7 +138,7 @@ export default class HomePage extends Component {
               <View tabLabel={item.name} key={index}>
                 <FlatList
                   data={this.state.dataList}
-                  renderItem={this.renderData}
+                  renderItem={this.renderData.bind(this)}
                   // keyExtractor={(item,index) =>index}
                 />
               </View>
@@ -173,8 +173,8 @@ const styles = StyleSheet.create({
   },
 });
 
-// const Home = createStackNavigator({
-//   HomePage: {screen: HomePage},
-//   WebView: {screen: WebView},
-// });
-// export default createAppContainer(Home);
+const RootStack = createStackNavigator({
+  HomePage: {screen: HomePage},
+  WebViewPage: {screen: WebViewPage},
+});
+export default Home = createAppContainer(RootStack)
