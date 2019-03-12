@@ -107,6 +107,14 @@ android {
             abiFilters "armeabi-v7a", "x86"
         }
     }
+    signingConfigs{
+        release { 
+            storeFile file("my-project01-key.keystore") //keystore文件所在的文件路径
+            storePassword "123456" //之前设置的密钥口令
+            keyAlias "my-key-alias" //之前填写的别名
+            keyPassword "123456" //之前设置的密钥口令
+        } 
+    } 
     splits {
         abi {
             reset()
@@ -119,6 +127,7 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release //添加这句话引用签名配置 否则打包出来的文件是app-release-unsigned.apk
         }
     }
     // applicationVariants are e.g. debug, release
