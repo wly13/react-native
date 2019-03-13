@@ -11,7 +11,7 @@ import {
 import ScrollableTabView, {
   ScrollableTabBar,
 } from 'react-native-scrollable-tab-view';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import {createStackNavigator, createAppContainer} from 'react-navigation';
 
 // import Header from './Header';
 import WebViewPage from './WebViewPage';
@@ -41,7 +41,7 @@ var key = '33457bbadb1179dc572fad4aff06b369';
 var {height, width} = Dimensions.get('screen');
 class HomePage extends Component {
   static navigationOptions = {
-    headerTitle:'首页',
+    headerTitle: '首页',
   };
   constructor(props) {
     super(props);
@@ -62,7 +62,7 @@ class HomePage extends Component {
           resolve(responseJson);
           console.log(responseJson.newslist);
           this.setState({
-            dataList: responseJson.newslist
+            dataList: responseJson.newslist,
           });
         })
         .catch(error => {
@@ -71,41 +71,45 @@ class HomePage extends Component {
         .done();
     });
   }
-  renderData({item}) {
-    // console.log(item);
+  renderData({item, index}) {
+    console.log(index);
     return (
       <TouchableNativeFeedback
-        onPress={() => this.props.navigation.navigate('WebViewPage',{
-          url:item.url
-        })}
+        onPress={() =>
+          this.props.navigation.navigate('WebViewPage', {
+            url: item.url,
+          })
+        }
       >
-        <View
-          style={{flex: 1, flexDirection: 'row', padding: 5, paddingBottom: -5}}
-        >
-          <View style={{flex: 1}}>
+        <View style={{flexDirection: 'row', padding: 5,borderBottomWidth:1,borderBottomColor:"#cdcdcd"}}>
+          <View style={{width: width / 3}}>
             <Image
               source={{uri: item.picUrl}}
-              style={{width: 145, height: 105}}
+              style={{width: width / 3, height: (width * 7) / 29}}
             />
           </View>
-          <View style={{flex: 2}}>
+          <View
+            style={{width: (width * 2) / 3, paddingLeft: 5, paddingRight: 5}}
+          >
             <View>
-              <Text style={{fontSize: 20, fontWeight: ('bold', '600')}}>
+              <Text numberOfLines={2} style={{fontSize: 18, fontWeight: ('bold', '600')}}>
                 {item.title}
               </Text>
             </View>
             <View
               style={{
                 flexDirection: 'row',
-                marginTop: 10,
                 justifyContent: 'space-between',
-                marginTop: 25,
+                position:'absolute',
+                bottom:0,
+                left:0,
+                padding:5,
               }}
             >
               <Text style={{fontSize: 16, color: '#79bcff'}}>
                 {item.description}
               </Text>
-              <Text style={{}}>{item.ctime}</Text>
+              <Text style={{lineHeight:20,marginLeft:width/4}}>{item.ctime}</Text>
             </View>
           </View>
         </View>
@@ -115,8 +119,8 @@ class HomePage extends Component {
   render() {
     let tabs = data;
     return (
-      <View style={{flex: 1}}>
-        {/* <Header title={this.props.title} /> */}
+      // ScrollableTabView需要在弹性窗里
+      <View style={{flex: 1}}> 
         <ScrollableTabView
           renderTabBar={() => (
             <ScrollableTabBar
@@ -171,10 +175,16 @@ const styles = StyleSheet.create({
   tabText: {
     fontSize: 16,
   },
+  box: {
+    padding: 5,
+  },
+  box1: {
+    padding: 0,
+  },
 });
 
 const RootStack = createStackNavigator({
   HomePage: {screen: HomePage},
   WebViewPage: {screen: WebViewPage},
 });
-export default Home = createAppContainer(RootStack)
+export default (Home = createAppContainer(RootStack));

@@ -28,7 +28,6 @@ export default class Category extends Component {
     return (
       <View>
         <Header title={this.props.title} />
-        {/* <Text> textInComponent </Text> */}
         <Text style={{textAlign: 'center',height:50,lineHeight:50,backgroundColor:"#fff"}}>请选择你感兴趣的3-5个类别</Text>
         <View style ={styles.category}>
           <FlatList
