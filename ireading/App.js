@@ -90,7 +90,7 @@ export default class App extends Component {
 
           <TabNavigator.Item
             selected={this.state.selectedTab === 'about'}
-            title="关于"
+            title="我的"
             titleStyle={styles.titleStyle}
             selectedTitleStyle={{color: '#63B8FF'}}
             renderIcon={() => (

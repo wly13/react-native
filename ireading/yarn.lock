@@ -4888,6 +4888,11 @@ react-native-scrollable-tab-view@^0.10.0:
     prop-types "^15.6.0"
     react-timer-mixin "^0.13.3"
 
+react-native-storage@^1.0.0-beta.0:
+  version "1.0.0-beta.0"
+  resolved "http://registry.npm.taobao.org/react-native-storage/download/react-native-storage-1.0.0-beta.0.tgz#cde11c67b50df7ea39503fdc9531c4cc6336761b"
+  integrity sha1-zeEcZ7UN9+o5UD/clTHEzGM2dhs=
+
 react-native-tab-navigator@^0.3.4:
   version "0.3.4"
   resolved "http://registry.npm.taobao.org/react-native-tab-navigator/download/react-native-tab-navigator-0.3.4.tgz#54a18f1ad06a09d4a0de81ff00416bc1b760c960"

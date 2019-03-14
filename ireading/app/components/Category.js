@@ -17,7 +17,7 @@ export default class Category extends Component {
     };
   }
   renderList({item}) {
-    console.log ('wang-tag item:' + item.name);
+    // console.log ('wang-tag item:' + item.name);
     return (
       <View>
         <Text style={styles.category_json}>{item.name}</Text>
