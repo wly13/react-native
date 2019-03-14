@@ -3,8 +3,12 @@ import {Text, View, TextInput, Button} from 'react-native';
 
 import Header from './Header';
 import storage from '../store/DataStore';
+import SQLite from '../store/Sqlite';
 
-const _saveData = () => {
+var sqLite = new SQLite();
+var db;
+
+const _saveData = () => {//测试react-native-storage+AsyncStorage
   let obj = {}
     obj.name = '张三'
     obj.age = 20
@@ -27,11 +31,11 @@ const _saveData = () => {
     })
 }
 
+
 export default class Suggest extends Component {
   constructor(props) {
     super(props);
   }
-
 
   render() {
     return (
