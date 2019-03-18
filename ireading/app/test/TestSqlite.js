@@ -22,16 +22,17 @@ export default class Suggest extends Component {
     //建表
     sqLite.createTable();
     //删除数据
-    sqLite.deleteData();
+    // sqLite.deleteData();
     //模拟一条数据
     var userData = [];
     var user = {};
-    user.name = "张三";
-    user.age = "28";
-    user.sex = "男";
-    user.phone = "18900001111";
-    user.email = "2343242@qq.com";
-    user.qq = "111222";
+    user.name = "";
+    user.passwd = '123444';
+    user.age = "";
+    user.sex = "";
+    user.phone = "22222222222";
+    user.email = "";
+    user.qq = "";
     userData.push(user);
     //插入数据
     sqLite.insertUserData(userData);
@@ -53,7 +54,6 @@ export default class Suggest extends Component {
   render() {
     return (
       <View>
-        <Header title={this.props.title} />
         <Button title={'测试'} onPress={() =>{
           alert(1)
         }} />
