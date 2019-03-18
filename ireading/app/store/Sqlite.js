@@ -41,6 +41,7 @@ export default class  SQLite extends Component{
       tx.executeSql('CREATE TABLE IF NOT EXISTS USER(' +
           'id INTEGER PRIMARY KEY  AUTOINCREMENT,' +
           'name varchar,'+
+          'passwd varchar,'+
           'age VARCHAR,' +
           'sex VARCHAR,' +
           'phone VARCHAR,' +
@@ -83,20 +84,21 @@ export default class  SQLite extends Component{
     if (!db) {
         this.open();
     }
-    this.createTable();
-    this.deleteData();
+    // this.createTable();
+    // this.deleteData();
     db.transaction((tx)=>{
        for(let i=0; i<len; i++){
         var user = userData[i];
         let name= user.name;
+        let passwd = user.passwd;
         let age = user.age;
         let sex = user.sex;
         let phone = user.phone;
         let email = user.email;
         let qq = user.qq;
-        let sql = "INSERT INTO user(name,age,sex,phone,email,qq)"+
-        "values(?,?,?,?,?,?)";
-        tx.executeSql(sql,[name,age,sex,phone,email,qq],()=>{
+        let sql = "INSERT INTO user(name,passwd,age,sex,phone,email,qq)"+
+        "values(?,?,?,?,?,?,?)";
+        tx.executeSql(sql,[name,passwd,age,sex,phone,email,qq],()=>{
           
           },(err)=>{
             console.log(err);
