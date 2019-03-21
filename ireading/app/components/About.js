@@ -1,21 +1,32 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import { Text, View ,Button} from 'react-native'
+import {createStackNavigator, createAppContainer} from 'react-navigation';
 
-import Header from "./Header";
-import Login from './Login';
+import LoginPage from './Login';
 
-export default class About extends Component {
+class AboutPage extends Component {
+  static navigationOptions ={
+    header:null
+  }
   constructor(props){
     super(props);
+    console.log("wang-tag test 333"+this.props.titlle)
   }
+
   render() {
     return (
       <View style={{justifyContent:'center'}}>
-        <Header title = {this.props.title} />
-        {/* <Text> textInComponent </Text> */}
-        <Login />
+        <Text> textInComponent </Text>
+        <Button title="登陆/注册" onPress={() =>{
+          this.props.navigation.push('LoginPage')
+        }} />
       </View>
     )
   }
 }
 
+const RootAbout = createStackNavigator({
+  AboutPage:{screen:AboutPage},
+  LoginPage:{screen:LoginPage},
+})
+export default (About = createAppContainer(RootAbout))

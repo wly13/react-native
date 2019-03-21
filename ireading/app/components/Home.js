@@ -72,7 +72,7 @@ class HomePage extends Component {
     });
   }
   renderData({item, index}) {
-    console.log(index);
+    // console.log(index);
     return (
       <TouchableNativeFeedback
         onPress={() =>
